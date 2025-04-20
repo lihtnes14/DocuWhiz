@@ -4,6 +4,6 @@ PyPDF2
 langchain-google-genai
 streamlit-extras
 groq
-chromadb==0.4.24
+chromadb[all]==0.4.24
 langchain==0.1.16
 langchain-community==0.0.32
