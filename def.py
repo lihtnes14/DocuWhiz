@@ -197,9 +197,13 @@ def main():
         st.write("Upload one or more PDF documents and ask questions to extract useful insights instantly. It's like chatting with your files—smart, fast, and efficient!")
 
     user_question = st.text_input("Ask me anything about the Resumes")
-    
+
     if user_question:
-        handleuser_input(user_question)
+        if st.session_state.conversation:
+            handleuser_input(user_question)
+        else:
+            st.warning("⚠️ Please upload and process PDFs before asking questions.")
+
 
     with st.sidebar:
         st.markdown(":green[YOUR DOCUMENTS]", unsafe_allow_html=True)
