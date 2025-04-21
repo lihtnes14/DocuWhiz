@@ -42,7 +42,7 @@ touch .env
 ```bash
 python -m venv venv
 source venv/bin/activate
-pip install -r requiements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Run the def.py in streamlit
